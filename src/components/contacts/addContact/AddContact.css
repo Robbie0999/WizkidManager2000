@@ -1,0 +1,89 @@
+/* Basic styling starts here */
+body{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace !important;
+  background-color: var(--neutralColor)  !important;
+  overflow-y: hidden !important;
+}
+
+h2{
+  font-size: var(--h2Size);
+  color: var(--textColor) !important
+}
+
+p{
+  font-size: var(--textSize);
+  color: var(--textColor);
+}
+
+.hr {
+  background: rgb(100, 100, 100);
+  height: 1px;
+}
+/* Basic styling ends here */
+
+/* Form styling starts here */
+.form-label{
+  color: var(--textColor);
+  font-size: var(--h4Size);
+}
+
+.form-control::placeholder, .form-select::placeholder{
+  color: rgb(100, 100, 100) !important;
+}
+
+.form-select-option::placeholder{
+  color: rgb(100, 100, 100) !important;
+}
+
+
+.form-control, .form-select{
+  background-color: transparent !important;
+  color: var(--textColor) !important;
+  font-size: var(--h4Size);
+  border-radius: 0% !important;
+  font-size: var(--h4Size) !important;
+}
+/* Form styling ends here */
+
+/* Button styles starts here */
+#btn-styles{
+  width: 150px;
+  height: 40px;
+  border: none;
+  font-size: var(--h4Size);
+  color: var(--textColor);
+  background: transparent;
+  transition: 0.3s ease-out;
+  outline: none;
+  border: 1px solid var(--textColor);
+  position: relative;
+}
+
+#btn-styles:hover{
+  color: var(--neutralColor);
+  cursor: pointer;
+}
+
+#btn-styles:before{
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background: var(--mainColor);
+}
+
+#btn-styles:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+/* Button styles ends here */

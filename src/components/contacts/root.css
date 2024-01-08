@@ -1,0 +1,17 @@
+/* Root styles starts here */
+:root{
+  --mainColor: rgb(255, 230, 38);
+  --mainColorDark: rgb(255, 198, 25);
+  --ctaColor: rgb(104, 69, 229);
+  --ctaColorDark: rgb(81, 47, 204);
+  --textColor: rgb(245, 245, 245);
+  --neutralColor: rgb(40, 40, 40);
+
+  --h1Size: 1.5em;
+  --h2Size: 1.3em;
+  --h3Size: 1em;
+  --h4Size: 0.8rem;
+  --textSize: 0.67em;
+  --ctaSize: 0.67em;
+}
+/* Root styles ends here */

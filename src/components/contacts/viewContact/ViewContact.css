@@ -1,0 +1,121 @@
+/* Basic styling starts here */
+body{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace !important;
+  background-color: var(--neutralColor)  !important;
+}
+
+h2{
+  font-size: var(--h2Size);
+  color: var(--textColor) !important
+}
+
+p{
+  font-size: var(--textSize);
+  color: var(--textColor);
+}
+
+.hr {
+  background: rgb(100, 100, 100);
+  height: 1px;
+}
+/* Basic styling ends here */
+
+/* Table styles starts here */
+Table{
+  color: var(--textColor);
+}
+
+.table-cell{
+  font-size: var(--h4Size);
+  font-weight: 300;
+  background-color: transparent !important;
+  color: var(--textColor) !important;
+}
+
+.table-head:hover{
+  color: var(--mainColor);
+}
+/* Table styles ends here */
+
+/* Button styles starts here */
+#btn-styles{
+  width: 150px;
+  height: 40px;
+  border: none;
+  font-size: var(--h4Size);
+  color: var(--textColor);
+  background: transparent;
+  transition: 0.3s ease-out;
+  outline: none;
+  border: 1px solid var(--textColor);
+  position: relative;
+}
+
+#btn-styles:hover{
+  color: var(--neutralColor);
+  cursor: pointer;
+}
+
+#btn-styles:before{
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background: var(--mainColor);
+}
+
+#btn-styles:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+/* Button styles starts here */
+
+/* Button2 styles starts here */
+#btn-styles2{
+  width: 80px;
+  height: 40px;
+  border: none;
+  font-size: var(--h4Size);
+  color: var(--textColor);
+  background: transparent;
+  transition: 0.3s ease-out;
+  outline: none;
+  border: 1px solid var(--textColor);
+  position: relative;
+}
+
+#btn-styles2:hover{
+  color: var(--neutralColor);
+  cursor: pointer;
+}
+
+#btn-styles2:before{
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background: var(--mainColor);
+}
+
+#btn-styles2:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+/* Button2 styles ends here */
